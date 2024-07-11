@@ -18,3 +18,11 @@ Chapter 02: Middleware
 -kreiran folder config i fajlovi corsOptions.js i allowedOptions.js
 -kreiran folder middlewares i fajlovi logger.js i errorHandler.js
 -u server.js fajlu dodano vise metoda app.use()
+
+Chapter 03: MongoDB
+-u terminalu instalirani paketi: Dotenv, Mongoose, Mongoose Sequence
+-kreirana .env fajl i varijable NODE_ENV i DATABASE_URI
+-kreiran .env.example fajl za primjerom koje varijable treba kreirati u .env fajlu
+-u folderu config kreiran dbConn.js fajl
+-kreiran folder models i fajlovi Note.js i User.js
+-u server.js fajl dodana logiku za povezivanje sa bazom
