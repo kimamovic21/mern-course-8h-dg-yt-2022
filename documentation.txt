@@ -10,3 +10,11 @@ Chapter 01: MERN Stack Project
 -kreiran server.js fajl
 -kreiran UserStories.md fajl sa instrukcijama o izradi projekta
 -kreiran documentation.txt fajl za opis izrade projekta
+
+Chapter 02: Middleware
+-u terminalu instalirani paketi: Cookie Parse, Cors, Date Fns, UUID
+-u fajl .gitignore dodan folder logs
+-kreiran folder logs i reqLog.log fajl 
+-kreiran folder config i fajlovi corsOptions.js i allowedOptions.js
+-kreiran folder middlewares i fajlovi logger.js i errorHandler.js
+-u server.js fajlu dodano vise metoda app.use()
