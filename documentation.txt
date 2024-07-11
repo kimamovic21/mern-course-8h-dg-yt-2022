@@ -1,0 +1,12 @@
+MERN Stack Full Tutorial & Project | Complete All-in-One Course | 8 Hours
+
+Chapter 01: MERN Stack Project
+-kreiran folder server
+-kreiran package.json fajl sa komandom npm init
+-kreiran folder public
+-u folderu public kreiran folder css i style.css
+-kreiran folder routes i root.js fajl
+-kreiran folder views i fajlovi index.html i 404.html 
+-kreiran server.js fajl
+-kreiran UserStories.md fajl sa instrukcijama o izradi projekta
+-kreiran documentation.txt fajl za opis izrade projekta
