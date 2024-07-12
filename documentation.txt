@@ -47,3 +47,19 @@ Chapter 05: ReactJS
 -dodan css u index.css fajl
 -kreiran UserStories.md fajl sa instrukcijama o izradi projekta
 -manje izmjene u documentation.txt fajlu
+
+
+Chapter 06: Redux & RTK Query
+-u terminalu instalirani paketi React Redux i Redux Toolkit
+-u folderu src kreiran folder app i store.js fajl
+-u folderu app kreiran apiSlice.js fajl
+-u folderu src kreiran folder features
+-u folderu features kreirani folderi notes i users
+-u folderu notes kreirani fajlovi: Note.jsx, notesApiSlice.js i NotesList.jsx
+-u folderu users kreirani fajlovi: User.jsx, usersApiSlice.js i UsersList.jsx
+-u index.css fajl dodan stil za tabele
+-u komponentu main.jsx dodana varijabla store i komponenta Provider
+-manja izmjena u allowedOrigins.js fajlu
+-u folderu controllers kreiran notesController.js fajl
+-u folderu routes kreiran noteRoutes.js fajl
+-u server.js fajlu kreirana metoda app.use() za zabiljeske
