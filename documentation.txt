@@ -26,3 +26,11 @@ Chapter 03: MongoDB
 -u folderu config kreiran dbConn.js fajl
 -kreiran folder models i fajlovi Note.js i User.js
 -u server.js fajl dodana logiku za povezivanje sa bazom
+
+
+Chapter 04: Controllers
+-u terminalu instalirani paketi: Bcrypt i Express Async Handler
+-kreiran folder controllers i usersControllers.js fajl
+-manje izmjene u folderu models
+-u folderu routes kreiran userRoutes.js fajl
+-u server.js fajl kreirana metoda app.use() za korisnike
