@@ -34,3 +34,16 @@ Chapter 04: Controllers
 -manje izmjene u folderu models
 -u folderu routes kreiran userRoutes.js fajl
 -u server.js fajl kreirana metoda app.use() za korisnike
+
+
+Chapter 05: ReactJS
+-kreiran folder client
+-u folderu client, u terminalu kreirana React.js aplikacija
+-u terminalu instalirani paketi: React Router Dom i Fortawesome
+-kreiran folder components i jsx komponente
+-kreiran folder features i unutar njega folderi auth, notes i users
+-u folderima auth, notes i users kreirani jsx komponente
+-kreiran folder img sa slikom background.jpg
+-dodan css u index.css fajl
+-kreiran UserStories.md fajl sa instrukcijama o izradi projekta
+-manje izmjene u documentation.txt fajlu
