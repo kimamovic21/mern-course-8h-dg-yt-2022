@@ -80,3 +80,13 @@ Chapter 07: React & Redux Forms
 -u UsersList.jsx komponentu dodane opcije za funkciju useGetUsersQuery()
 -kreirane nove klase u index.css fajlu
 -manje izmjene u documentation.txt fajlu
+
+
+Chapter 08: Authentication vs Authorization
+-u terminalu instalirani paketi: Jason web token i Express Rate Limit
+-u fajlovima .env i .env.example kreirane varijable ACCESS_TOKEN_SECRET i REFRESH_TOKEN_SECRET
+-u folderu controllers kreiran authController.js fajl
+-u folderu middleware kreirani fajlovi loginLimiter.js i verifyJWT.js
+-u folderu routes kreiran authRoutes.js fajl
+-manje izmjene u fajlovima noteRoutes i userRoutes.js
+-u server.js fajlu kreirana metoda app.user() za auth rute
