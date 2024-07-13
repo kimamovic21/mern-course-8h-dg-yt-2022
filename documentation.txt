@@ -63,3 +63,20 @@ Chapter 06: Redux & RTK Query
 -u folderu controllers kreiran notesController.js fajl
 -u folderu routes kreiran noteRoutes.js fajl
 -u server.js fajlu kreirana metoda app.use() za zabiljeske
+
+
+Chapter 07: React & Redux Forms
+-u .eslintrc.csj fajl dodana iskljucena opcija za prop-types
+-u komponentu App.jsx importovane nove kreirane komponente
+-u store.js fajl dodana funkcija setupListeners()
+-kreiran folder config i roles.js fajl
+-u folderu auth kreirana komponenta Prefetch.jsx
+-manje izmjene u komponenti Welcome.jsx
+-u folderu notes kreirane nove komponente: EditNote.jsx, EditNoteForm.jsx, NewNote.jsx, NewNoteForm.jsx
+-u notesApiSlice.js fajlu kreirane nove funkcije
+-u NotesList.jsx komponentu dodane opcije za funkciju useGetNotesQuery()
+-u folderu users kreirane nove komponente: EditUser.jsx, EditUserForm.jsx, NewUserForm.jsx
+-u usersApiSlice.js fajlu kreirane nove funkcije
+-u UsersList.jsx komponentu dodane opcije za funkciju useGetUsersQuery()
+-kreirane nove klase u index.css fajlu
+-manje izmjene u documentation.txt fajlu
