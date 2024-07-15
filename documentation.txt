@@ -90,3 +90,13 @@ Chapter 08: Authentication vs Authorization
 -u folderu routes kreiran authRoutes.js fajl
 -manje izmjene u fajlovima noteRoutes i userRoutes.js
 -u server.js fajlu kreirana metoda app.user() za auth rute
+
+
+Chapter 09: Login Auth
+-u folderu auth kreirani fajlovi authSlice.js i authApiSlice.js
+-manje izmjene u komponenti NewNote.jsx
+-u komponentu Login.jsx dodana logika za prijavu korisnika
+-u komponentu DashHeader.jsx dodana logika za odjavu korisnika
+-u store.js fajl dodana funkcija authReducer
+-manje izmjene u documentation.txt fajlu
+
