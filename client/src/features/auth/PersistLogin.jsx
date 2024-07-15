@@ -40,16 +40,16 @@ const PersistLogin = () => {
                 }
             }
 
-            if (!token && persist) verifyRefreshToken();
+            if (!token && persist) verifyRefreshToken()
         }
 
         return () => effectRan.current = true
 
         // eslint-disable-next-line
-    }, []);
+    }, [])
 
 
-    let content;
+    let content
     if (!persist) { // persist: no
         console.log('no persist');
         content = <Outlet />
@@ -57,10 +57,10 @@ const PersistLogin = () => {
         console.log('loading');
         content = <p>Loading...</p>
     } else if (isError) { //persist: yes, token: no
-        console.error('error')
+        console.error('error');
         content = (
             <p className='errmsg'>
-                {error.data?.message}
+                {`${error?.data?.message} - `}
                 <Link to="/login">Please login again</Link>.
             </p>
         );

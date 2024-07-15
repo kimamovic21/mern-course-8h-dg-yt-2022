@@ -100,3 +100,31 @@ Chapter 09: Login Auth
 -u store.js fajl dodana funkcija authReducer
 -manje izmjene u documentation.txt fajlu
 
+
+Chapter 10: JWT Auth
+-kreirani fajlovi .env i .env.example
+-u .gitignore fajl dodana vrijednost .env
+-u komponentu App.jsx importovana komponenta PersistLogin
+-u fajlovima apiSlice.js i authApiSlice.js kreirane nove funkcije
+-u komponentu Login.jsx dodana logika za persist
+-u folderu auth kreirana komponenta Persistlogin.jsx
+-manje izmjene u komponentama NotesList.jsx i UsersList.jsx
+-kreiran folder hooks i usePersist.js fajl
+-manje izmjene u index.css fajlu
+-manje izmjene u documentation.txt fajlu
+
+
+Chapter 11: Roles and Permissions
+-u terminalu instaliran paket JWT Decode
+-manje izmjene u apiSlice.js fajlu
+-u folderu hooks kreiran useAuth.js fajl
+-u komponentu DashFooter.jsx dodana funkcija useAuth
+-u komponentu DashHeader.jsx dodana funkcija useAuth
+-manje izmjene u komponenti PersistLogin.jsx
+-u folderu auth kreirana komponenta RequireAuth.jsx
+-u komponentu Welcome.jsx dodana funkcija useAuth
+-u komponentu EditNoteForm.jsxdodana funckija useAuth
+-u komponentu NotesList.jsx dodana funckija useAuth
+-manja izmjene u komponenti UsersList.jsx
+-u komponentu App.jsx dodana komponenta RequirePath
+-manje izmjene u documentation.txt fajlu
