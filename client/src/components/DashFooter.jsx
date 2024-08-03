@@ -1,7 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faHouse } from "@fortawesome/free-solid-svg-icons"
 import { useNavigate, useLocation } from 'react-router-dom'
-
 import useAuth from "../hooks/useAuth"
 
 const DashFooter = () => {
@@ -33,7 +32,6 @@ const DashFooter = () => {
             <p>Status: {status}</p>
         </footer>
     )
-
     return content
 }
 

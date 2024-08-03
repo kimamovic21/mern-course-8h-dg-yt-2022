@@ -21,8 +21,8 @@ const Public = () => {
                 <Link to="/login">Employee Login</Link>
             </footer>
         </section>
+
     )
-    
     return content
 }
 

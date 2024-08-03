@@ -128,3 +128,6 @@ Chapter 11: Roles and Permissions
 -manja izmjene u komponenti UsersList.jsx
 -u komponentu App.jsx dodana komponenta RequirePath
 -manje izmjene u documentation.txt fajlu
+
+
+Chapter 12: Refactoring

@@ -1,11 +1,10 @@
-import { useEffect, useRef, useState } from 'react'
 import { Outlet, Link } from "react-router-dom"
-
+import { useEffect, useRef, useState } from 'react'
 import { useSelector } from 'react-redux'
 import { useRefreshMutation } from "./authApiSlice"
 import { selectCurrentToken } from "./authSlice"
-
 import usePersist from "../../hooks/usePersist"
+import PulseLoader from 'react-spinners/PulseLoader'
 
 const PersistLogin = () => {
 
@@ -25,7 +24,8 @@ const PersistLogin = () => {
 
 
     useEffect(() => {
-        if (effectRan.current === true || import.meta.env.NODE_ENV !== 'development') { // React 18 Strict Mode
+
+        if (effectRan.current === true || import.meta.env.VITE_NODE_ENV !== 'development') { // React 18 Strict Mode
 
             const verifyRefreshToken = async () => {
                 console.log('verifying refresh token')
@@ -51,26 +51,26 @@ const PersistLogin = () => {
 
     let content
     if (!persist) { // persist: no
-        console.log('no persist');
+        console.log('no persist')
         content = <Outlet />
     } else if (isLoading) { //persist: yes, token: no
-        console.log('loading');
-        content = <p>Loading...</p>
+        console.log('loading')
+        content = <PulseLoader color={"#FFF"} />
     } else if (isError) { //persist: yes, token: no
-        console.error('error');
+        console.log('error')
         content = (
             <p className='errmsg'>
                 {`${error?.data?.message} - `}
                 <Link to="/login">Please login again</Link>.
             </p>
-        );
+        )
     } else if (isSuccess && trueSuccess) { //persist: yes, token: yes
-        console.log('success');
-        content = <Outlet />;
+        console.log('success')
+        content = <Outlet />
     } else if (token && isUninitialized) { //persist: yes, token: yes
-        console.log('token and uninit');
-        console.log(isUninitialized);
-        content = <Outlet />;
+        console.log('token and uninit')
+        console.log(isUninitialized)
+        content = <Outlet />
     }
 
     return content

@@ -40,14 +40,14 @@ const EditNoteForm = ({ note, users }) => {
 
     }, [isSuccess, isDelSuccess, navigate])
 
-    const onTitleChanged = (e) => setTitle(e.target.value)
-    const onTextChanged = (e) => setText(e.target.value)
-    const onCompletedChanged = () => setCompleted(prev => !prev)
-    const onUserIdChanged = (e) => setUserId(e.target.value)
+    const onTitleChanged = e => setTitle(e.target.value)
+    const onTextChanged = e => setText(e.target.value)
+    const onCompletedChanged = e => setCompleted(prev => !prev)
+    const onUserIdChanged = e => setUserId(e.target.value)
 
     const canSave = [title, text, userId].every(Boolean) && !isLoading
 
-    const onSaveNoteClicked = async () => {
+    const onSaveNoteClicked = async (e) => {
         if (canSave) {
             await updateNote({ id: note.id, user: userId, title, text, completed })
         }
